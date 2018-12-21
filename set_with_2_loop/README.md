@@ -3,9 +3,9 @@
 ## Problem:
 **Given an array of integer with integer sum, finding in the array have couple of number equal with sum**
 > Example:
-> arr = [0, 4, 7, -2, 6, 9, 10]
-> sum = 9 --> true ( 0 + 9 )
-> sum = 3 --> false
+> - arr = [0, 4, 7, -2, 6, 9, 10]
+> - sum = 9 --> true ( 0 + 9 )
+> - sum = 3 --> false
 
 We also have simple answer is using loop in loop to get each element in array and sum them like this:
 ```ruby
