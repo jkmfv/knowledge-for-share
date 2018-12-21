@@ -1,5 +1,5 @@
 
-# object: Given an array of integer with integer s, finding in the array have couber of number equal with s
+# object: Given an array of integer with integer s, finding in the array have couple of number equal with s
 # example
 # arr = [0, 4, 7, -2, 6, 9, 10]
 # s = 9 --> true ( 0 + 9 )
