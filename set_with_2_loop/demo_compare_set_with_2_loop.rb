@@ -18,7 +18,7 @@ class Worker
   end
 
   def set_rand_sum
-    @sum = rand(-9_999_999..9_999_999)
+    @sum = rand(-999_999_999..999_999_999)
   end
 
   def num_of_arr=(number)
@@ -28,13 +28,13 @@ class Worker
 
   def find_basic
     i = 0
-    while i < @arr.size-1
+    while i < @arr.size - 1
       j = i + 1
       while j < @arr.size
         return true if @arr[i] + @arr[j] == @sum
-        j = j + 1
+        j += 1
       end
-      i = i + 1
+      i += 1
     end
     false
   end
@@ -50,14 +50,14 @@ class Worker
   end
 
   def show_details
-    puts "\nNumber of array: #{@num_of_arr}, sum: #{@sum}"
+    puts "Array have: #{@num_of_arr} element(s), SUM: #{@sum}"
     # puts "#{@arr}"
   end
 
   private
 
   def init_array
-    @arr = Array.new(@num_of_arr) { rand(-99_999_999..99_999_999) }
+    @arr = Array.new(@num_of_arr) { rand(-999_999_999..999_999_999) }
   end
 end
 
@@ -65,61 +65,52 @@ test = Worker.new
 
 require 'benchmark'
 
-#
-# Benchmark.bm(10) do |benchmark|
-#   benchmark.report('2 loop: ') { test.find_basic }
-#   benchmark.report('set: ') { test.find_set }
-# end
-# p "The result of this test case is: #{test.find_set}"
-# puts "-------------------------------------------------------------------\n\n\n"
-# test.show_details
-
 test.num_of_arr = 100
 test.set_rand_sum
 test.show_details
-Benchmark.bm(10) do |benchmark|
-  benchmark.report('2 loop: ') { test.find_basic }
-  benchmark.report('set: ') { test.find_set }
+Benchmark.bm(20) do |benchmark|
+  benchmark.report('find_basic: ') { test.find_basic }
+  benchmark.report('find_set: ') { test.find_set }
 end
 p "The result of this test case is: #{test.find_set}"
-puts "-------------------------------------------------------------------\n\n\n"
+puts "-----------------------------------------------------------------\n"
 
 test.num_of_arr = 1_000
 test.set_rand_sum
 test.show_details
-Benchmark.bm(10) do |benchmark|
-  benchmark.report('2 loop: ') { test.find_basic }
-  benchmark.report('set: ') { test.find_set }
+Benchmark.bm(20) do |benchmark|
+  benchmark.report('find_basic: ') { test.find_basic }
+  benchmark.report('find_set: ') { test.find_set }
 end
 p "The result of this test case is: #{test.find_set}"
-puts "-------------------------------------------------------------------\n\n\n"
+puts "-----------------------------------------------------------------\n"
 
 test.num_of_arr = 10_000
 test.set_rand_sum
 test.show_details
-Benchmark.bm(10) do |benchmark|
-  benchmark.report('2 loop: ') { test.find_basic }
-  benchmark.report('set: ') { test.find_set }
+Benchmark.bm(20) do |benchmark|
+  benchmark.report('find_basic: ') { test.find_basic }
+  benchmark.report('find_set: ') { test.find_set }
 end
 p "The result of this test case is: #{test.find_set}"
-puts "-------------------------------------------------------------------\n\n\n"
+puts "-----------------------------------------------------------------\n"
 
 test.num_of_arr = 100_000
 test.set_rand_sum
 test.show_details
-Benchmark.bm(10) do |benchmark|
-  benchmark.report('2 loop: ') { test.find_basic }
-  benchmark.report('set: ') { test.find_set }
+Benchmark.bm(20) do |benchmark|
+  benchmark.report('find_basic: ') { test.find_basic }
+  benchmark.report('find_set: ') { test.find_set }
 end
 p "The result of this test case is: #{test.find_set}"
-puts "-------------------------------------------------------------------\n\n\n"
+puts "-----------------------------------------------------------------\n"
 
 test.num_of_arr = 1_000_000
 test.set_rand_sum
 test.show_details
-Benchmark.bm(10) do |benchmark|
-  benchmark.report('2 loop: ') { test.find_basic }
-  benchmark.report('set: ') { test.find_set }
+Benchmark.bm(20) do |benchmark|
+  benchmark.report('find_basic: ') { test.find_basic }
+  benchmark.report('find_set: ') { test.find_set }
 end
 p "The result of this test case is: #{test.find_set}"
-puts "-------------------------------------------------------------------\n\n\n"
+puts "-----------------------------------------------------------------\n"
