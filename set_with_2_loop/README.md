@@ -45,7 +45,23 @@ Now the complexity of set_method is O(n) in average case!
 This is my result after running the script __*demo_compare_set_with_2_loop.rb*__
 
 ![Result of BigO]
+(https://github.com/mynicknameisJK/knowledge-for-share/raw/master/set_with_2_loop/result.png)
+
+![Result of BigO]
+(https://github.com/mynicknameisJK/knowledge-for-share/master/set_with_2_loop/result.png)
+
+
+![Result of BigO]
+(https://raw.github.com/mynicknameisJK/knowledge-for-share/blob/master/set_with_2_loop/result.png)
+
+
+![Result of BigO]
+(https://github.com/mynicknameisJK/knowledge-for-share/master/set_with_2_loop/result.png)
+
+
+![Result of BigO]
 (https://github.com/mynicknameisJK/knowledge-for-share/blob/master/set_with_2_loop/result.png)
+
 
 
 ### Additional information
