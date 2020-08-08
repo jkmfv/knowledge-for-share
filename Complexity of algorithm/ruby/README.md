@@ -47,13 +47,13 @@ Now the complexity of set_method is O(n) in average case!
 ### Result
 This is my result after running the script __*demo_compare_set_with_2_loop.rb*__
 
-![Result of tests](https://raw.githubusercontent.com/jkmfv/knowledge-for-share/master/Complexity of algorithm/ruby/result.png)
+![Result of tests](https://raw.githubusercontent.com/jkmfv/knowledge-for-share/master/Complexity%20of%20algorithm/ruby/result.png)
 
 I want to test if the function is 'fasle' and start with the array of 100_000 number, the result is 207 seconds ~ 3.5 minutes and the set is also ~0.03ms
 
-![Result of 100_000](https://raw.githubusercontent.com/jkmfv/knowledge-for-share/master/Complexity of algorithm/ruby/100_000_result.png)
+![Result of 100_000](https://raw.githubusercontent.com/jkmfv/knowledge-for-share/master/Complexity%20of%20algorithm/ruby/100_000_result.png)
 
 
 ### Additional information
-![Image of BigO](https://raw.githubusercontent.com/jkmfv/knowledge-for-share/master/Complexity of algorithm/ruby/bigO.png)
+![Image of BigO](https://raw.githubusercontent.com/jkmfv/knowledge-for-share/master/Complexity%20of%20algorithm/ruby/bigO.png)
 http://bigocheatsheet.com/
